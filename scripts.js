@@ -15,7 +15,7 @@ function changeToGreen(event) {
 let it = document.querySelector("#it");
 it.addEventListener("click", changeToRed);
 function changeToRed() {
-  it.style.backgroundColor = "red";
+  it.classList.add("red");
   grid.removeEventListener("click", changeToGreen);
   endGame();
 }
